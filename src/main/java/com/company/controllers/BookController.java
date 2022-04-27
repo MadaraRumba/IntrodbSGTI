@@ -20,7 +20,7 @@ public class BookController {
     public static boolean addBook(){
         // prompting the user for data
         System.out.print("Enter the name of the book: ");
-        String name = scanner.next();
+        String name = scanner.nextLine();
 
         System.out.print("Enter the price of the book: ");
         int price = scanner.nextInt();

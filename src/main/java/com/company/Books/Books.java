@@ -13,8 +13,13 @@ public class Books {
     private String name;
     private int price;
 
+    // an empty constructor? whyyyy tho
+    public Books(){
+
+    }
+
     // define constructor
-    public Books(Integer id, String name, int price) {
+    public Books(int id, String name, int price) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -22,11 +27,11 @@ public class Books {
 
     // define getters and setters
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -38,11 +43,9 @@ public class Books {
         this.name = name;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+    public void setPrice(int price) { this.price = price; }
 }

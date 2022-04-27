@@ -4,7 +4,6 @@ package com.company.menu;
 // using the template shown, and we'll demo them
 
 import com.company.controllers.BookController;
-
 import java.util.Scanner;
 
 public class BookMenu {
@@ -21,7 +20,7 @@ public class BookMenu {
 
         switch (option){
             case 1:
-                System.out.println(BookController.addBook() ? "Successfully added new student " : "Student not added");
+                System.out.println(BookController.addBook() ? "Successfully added new book " : "Book not added");
                 break;
             case 2:
                 System.out.println(BookController.getBookById().getName());
